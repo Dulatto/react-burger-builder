@@ -10,7 +10,6 @@ class OrderSummary extends Component {
     }
 
     render() {
-
         const ingredientSummary = Object.keys(this.props.ingredients)
             .map(igKey => {
                 return (<li key={igKey}>
@@ -35,5 +34,6 @@ class OrderSummary extends Component {
 
 
 };
+
 
 export default OrderSummary;
