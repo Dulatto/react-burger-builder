@@ -135,10 +135,12 @@ class BurgerBuilder extends Component {
                 purchaseCancelled={this.purchaseCancelHandler}
                 purchaseContinued={this.purchaseContinueHandler} />;
         }
+
         if (this.state.loading) {
             orderSummary = <Spinner />;
         }
         // {salad: true, meat: false, ...}
+
         return (
             <Aux>
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
