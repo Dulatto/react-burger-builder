@@ -8,7 +8,6 @@ const input = (props) => {
         case ('input'):
             inputElement = <input />
     }
-
     return (
         <div>
             <label>{props.label}</label>
